@@ -7,7 +7,7 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/item_numbers"
+        android:id="@+id/tv_number"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TextView"

@@ -1,4 +1,5 @@
 package com.example.bai_tap
 
-class Numbers {
-}
+data class Numbers (
+    val number: Int
+)
