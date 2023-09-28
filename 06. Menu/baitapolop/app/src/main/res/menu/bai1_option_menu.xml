@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/miBtvn1Linear"
+        android:icon="@drawable/ic_search"
+        android:title="Linear" />
+    <item
+        android:id="@+id/miBtvn1Relative"
+        android:icon="@drawable/ic_search"
+        android:title="Relative" />
+    <item
+        android:id="@+id/miBtvn1Constraint"
+        android:icon="@drawable/ic_search"
+        android:title="Constraint" />
+    <item
+        android:id="@+id/miBtvn1Table"
+        android:icon="@drawable/ic_search"
+        android:title="Table" />
 </menu>

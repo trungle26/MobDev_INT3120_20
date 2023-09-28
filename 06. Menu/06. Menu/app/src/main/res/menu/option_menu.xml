@@ -4,7 +4,8 @@
     <item
         android:id="@+id/item1"
         android:icon="@drawable/ic_search"
-        app:showAsAction="always"/>
+        app:showAsAction="always"
+        android:title="Item 1" />
     <item
         android:id="@+id/item2"
         android:title="Item2"
