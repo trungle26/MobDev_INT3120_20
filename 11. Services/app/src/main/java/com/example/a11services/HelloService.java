@@ -1,5 +1,6 @@
 package com.example.a11services;
 
+import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 
 public class HelloService extends Service {
     private Looper mServiceLooper;
@@ -44,6 +46,13 @@ public class HelloService extends Service {
         Message msg = mServiceHandler.obtainMessage();
         msg.arg1 = startId;
         mServiceHandler.sendMessage(msg);
+
+        Notification notification = new NotificationCompat.Builder(this,"running_channel")
+                .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
+                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setContentTitle("Service is running")
+                .build();
+        startForeground(1,notification);
         // If we get killed, after running from here , restart
         return START_STICKY;
     }

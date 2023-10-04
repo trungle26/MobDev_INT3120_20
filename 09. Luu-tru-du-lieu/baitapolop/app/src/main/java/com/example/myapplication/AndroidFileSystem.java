@@ -18,7 +18,7 @@ public class AndroidFileSystem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bai_tap_ve_nha1);
+        setContentView(R.layout.activity_android_file_system);
         // Assuming mSilentMode is a boolean variable you want to store
         boolean mSilentMode = true;
 

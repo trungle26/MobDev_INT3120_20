@@ -12,7 +12,7 @@
     <item
         android:id="@+id/miBtvn1Constraint"
         android:icon="@drawable/ic_search"
-        android:title="nn" />
+        android:title="Write" />
     <item
         android:id="@+id/miBtvn1Table"
         android:icon="@drawable/ic_search"
