@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:text="MEDIA"
-            android:onClick="toMedia"
+            android:onClick="btnMedia"
             android:textSize="20sp" />
 
         <Button
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:text="LOCATION"
-            android:onClick="toLocation"
+            android:onClick="btnLocation"
             android:textSize="20sp" />
 
         <Button
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:text="MAP"
-            android:onClick="toMap"
+            android:onClick="btnMap"
             android:textSize="20sp" />
     </LinearLayout>
 

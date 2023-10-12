@@ -14,17 +14,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void toMedia(View view) {
+    public void btnMedia(View view) {
         intent = new Intent(MainActivity.this, MediaActivity.class);
         startActivity(intent);
     }
 
-    public void toLocation(View view) {
+    public void btnLocation(View view) {
         intent = new Intent(MainActivity.this, LocationActivity.class);
         startActivity(intent);
     }
 
-    public void toMap(View view) {
+    public void btnMap(View view) {
         intent = new Intent(MainActivity.this, MapActivity.class);
         startActivity(intent);
     }

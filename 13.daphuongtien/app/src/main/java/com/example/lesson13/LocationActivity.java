@@ -61,13 +61,8 @@ public class LocationActivity extends AppCompatActivity implements LocationListe
                             try {
                                 List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
-                                locationDetails.setText("Latitude: " + location.getLatitude() + "\nLongitude: " + location.getLongitude() + "\n" + addresses.get(0).getAddressLine(0));
+                                locationDetails.setText("latitude: " + location.getLatitude() + "\nlongitude: " + location.getLongitude() + "\n" + addresses.get(0).getAddressLine(0));
 
-                                Intent intent = new Intent(LocationActivity.this, MapActivity.class);
-                                intent.putExtra("latitude", location.getLatitude());
-                                intent.putExtra("longitude", location.getLongitude());
-                                intent.putExtra("address", addresses.get(0).getAddressLine(0));
-                                startActivity(intent);
 
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
@@ -99,5 +94,11 @@ public class LocationActivity extends AppCompatActivity implements LocationListe
             throw new RuntimeException(e);
         }
         locationDetails.setText("Latitude: " + location.getLatitude() + "\nLongitude: " + location.getLongitude() + "\n" + addresses.get(0).getAddressLine(0));
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+//        locationManager.removeUpdates();
     }
 }
