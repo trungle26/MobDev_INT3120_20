@@ -2,37 +2,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
 
-    <!-- EditText for entering a new word -->
-    <EditText
-        android:id="@+id/editTextWord"
+
+    <TextView
+        android:id="@+id/textViewQueryResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter a word"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Button to add a word -->
     <Button
-        android:id="@+id/buttonAdd"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Word"
+        android:layout_marginTop="284dp"
+        android:text="add new contact"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextWord" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- ListView to display the list of words -->
-    <ListView
-        android:id="@+id/listViewWords"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnAddBulk"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="add bulk"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonAdd" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Number"
+        app:layout_constraintBottom_toTopOf="@+id/etInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
